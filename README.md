@@ -13,6 +13,13 @@ Este projeto explora os principais poluentes atmosféricos registrados em São P
 - O MP10 é o poluente com maior número de registros, devido à intenso movimento de veículos em SP.
 - Observa-se uma queda significativa na média de MP10 a partir de 2020, possivelmente em função da pandemia, o que levou a paralização de veículos e o crescente uso de veículos elétricos.
 
+## Imagens
+![Quantidade de Poluentes em SP](quantidade.png)
+![Gráfico Diário da Média MP10](media_diaria.png)
+![Gráfico Anual da Média MP10](media_anual.png)
+![Contagem De Medições Por Ano](contagem.png)
+
+
 ## Tecnologias Utilizadas
 
 - Python
