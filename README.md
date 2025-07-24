@@ -6,7 +6,7 @@ Este projeto explora os principais poluentes atmosféricos registrados em São P
 
 - Identificar os poluentes mais frequentes.
 - Analisar a média diária e anual de MP10.
-![Gráfico MP10](grafico_mp10.png)
+
 
 ## Conclusões
 
