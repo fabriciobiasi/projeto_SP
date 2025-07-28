@@ -1,32 +1,44 @@
-# Análise de Poluentes em São Paulo
+# 🌫️ Análise da Poluição do Ar em São Paulo (2015–2021)
 
-Este projeto explora os principais poluentes atmosféricos registrados em São Paulo.
+Este projeto analisa dados reais da qualidade do ar na cidade de São Paulo, com foco nos poluentes **MP10** (material particulado) e **O₃** (ozônio troposférico). A análise cobre o período entre 2015 e 2021, abordando também os possíveis impactos da pandemia de COVID-19 nos níveis de poluição.
 
-## Objetivo
+## 🎯 Objetivo
 
-- Identificar os poluentes mais frequentes.
-- Analisar a média diária e anual de MP10.
+Investigar padrões temporais, variações anuais e diferenças entre os dois principais poluentes urbanos em SP, relacionando os dados com eventos externos (como a pandemia).
 
+## 📁 Dados
 
-## Conclusões
+- Fonte: CETESB / IBGE (base usada em estudo acadêmico)
+- Estrutura: Data, Hora, Poluente, Valor
+- Período: 2015 a 2021
+- Formato: CSV
 
-- O MP10 é o poluente com maior número de registros, devido à intenso movimento de veículos em SP.
-- Observa-se uma queda significativa na média de MP10 a partir de 2020, possivelmente em função da pandemia, o que levou a paralização de veículos e o crescente uso de veículos elétricos.
+## 📊 Análises realizadas
 
-## Imagens
-![Quantidade de Poluentes em SP](quantidade.png)
-![Gráfico Diário da Média MP10](media_diaria.png)
-![Gráfico Anual da Média MP10](media_anual.png)
-![Contagem De Medições Por Ano](contagem.png)
+- Frequência de medições por poluente
+- Evolução da concentração de MP10 e O₃ ao longo dos anos
+- Comparações gráficas (linha, barras, boxplot)
+- Destaque para possíveis quedas de poluentes em 2020
 
+## 🧠 Principais insights
 
-## Tecnologias Utilizadas
+- **O₃ apresentou queda entre 2015 e 2017**, com estabilização nos anos seguintes.
+- **MP10 mostrou tendência de crescimento**, com alta variação e picos frequentes.
+- A pandemia pode ter contribuído para **redução pontual** de poluentes, mas efeitos foram distintos para cada tipo.
+
+## 🛠️ Tecnologias usadas
 
 - Python
-- Pandas
-- Matplotlib
+- pandas
+- matplotlib
+- seaborn
 - Google Colab
 
+## ▶️ Como executar
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/fabriciobiasi/projeto_SP.git
 ## Fonte dos Dados
 
 Os dados foram obtidos através do Kaggle.
