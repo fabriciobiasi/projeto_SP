@@ -46,7 +46,7 @@ O arquivo `SP_poluicao_dados.csv` **não está incluso** neste repositório devi
 
 Você pode baixá-lo manualmente no seguinte link:
 
-👉 [Baixar CSV]([Download])(https://www.kaggle.com/datasets/samirnunesdasilva/sao-paulo-pollution-data)
+👉 [Baixar CSV](https://www.kaggle.com/datasets/samirnunesdasilva/sao-paulo-pollution-data)
 
 Após o download, crie uma pasta chamada `dados/` no mesmo diretório do notebook e salve o arquivo lá. 
 
