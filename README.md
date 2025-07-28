@@ -39,8 +39,17 @@ Investigar padrões temporais, variações anuais e diferenças entre os dois pr
 1. Clone o repositório:
    ```bash
    git clone https://github.com/fabriciobiasi/projeto_SP.git
-2. Para baixar o arquivo CSV:
-   Clique neste link: https://www.kaggle.com/datasets/samirnunesdasilva/sao-paulo-pollution-data  
+   
+2. ⚠️ Sobre os dados
+
+O arquivo `SP_poluicao_dados.csv` **não está incluso** neste repositório devido ao tamanho.
+
+Você pode baixá-lo manualmente no seguinte link:
+
+👉 [Baixar CSV]([Download](https://www.kaggle.com/datasets/samirnunesdasilva/sao-paulo-pollution-data)
+
+Após o download, crie uma pasta chamada `dados/` no mesmo diretório do notebook e salve o arquivo lá. 
+
 ## Fonte dos Dados
 
 Os dados foram obtidos através do Kaggle.
