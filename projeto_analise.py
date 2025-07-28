@@ -45,7 +45,7 @@ plt.title('Quantidade de medições por tipo de poluente')
 plt.xlabel('Poluentes')
 plt.ylabel('Quantidade')
 #Vemos que o poluente que mais aparece seria o MP10 por ser um poluente feito por veículos!
-plt.savefig('poluentes.png', dpi=300, bbox_inches='tight')
+plt.savefig('img/poluentes.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 """## Análise da contagem de medições por ano
@@ -62,7 +62,7 @@ plt.bar(medicoes_anuais['Ano'],medicoes_anuais['Contagem'])
 plt.title('Contagem de medições por ano')
 plt.xlabel('Ano')
 plt.ylabel('Número de medições')
-plt.savefig('contagem.png', dpi=300, bbox_inches='tight')
+plt.savefig('img/contagem.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 """## Análise do poluente MP10
@@ -79,9 +79,9 @@ mp10_graph = plt.plot(media_diaria['Data'], media_diaria['MediaMP10'], color='bl
 plt.title('Média Diária de MP10 em São Paulo')
 plt.xlabel('Data')
 plt.ylabel('MP10 (ug/m3)')
-
-plt.savefig('grafico_mp10.png', dpi=300, bbox_inches='tight')
+plt.savefig('img/grafico_mp10.png', dpi=300, bbox_inches='tight')
 plt.show()
+
 
 media_diaria['Data'] = pd.to_datetime(media_diaria['Data'])
 media_diaria['Ano'] = media_diaria['Data'].dt.year
@@ -92,8 +92,7 @@ plt.plot(media_anual['Ano'], media_anual['MediaMP10'])
 plt.title('Média anual do Poluente MP10')
 plt.xlabel('Ano')
 plt.ylabel('Média')
-
-plt.savefig('grafico_mp10_anual.png', dpi=300, bbox_inches='tight')
+plt.savefig('img/grafico_mp10_anual.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 """## Análise do ozônio (O₃) // Segundo maior poluente
@@ -105,10 +104,11 @@ dados_o3 = dados[contagem_o3]
 dados_o3.value_counts('Poluente')
 dados_o3['Data'] = pd.to_datetime(dados_o3['DataHora']).dt.date
 media_diaria_o3 = dados_o3.groupby('Data')['Valor'].mean().reset_index()
-plt.plot(media_diaria_o3['Data'], media_diaria_o3['Valor'], color='red')
 plt.title('Média Diária de O₃ em São Paulo')
 plt.xlabel('Data')
 plt.ylabel('O₃ (µg/m³)')
+plt.savefig('img/grafico_ozonio.png', dpi=300, bbox_inches='tight')
+plt.show()
 
 """## Análise comparativa entre os dois primeiros poluentes
 
@@ -131,6 +131,7 @@ plt.title('Média anual dos poluentes MP10 e O₃ em São Paulo (2015–2021)')
 plt.ylabel('Concentração média (µg/m³)')
 plt.grid(True)
 plt.tight_layout()
+plt.savefig('img/grafico_comparativo_media.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 """### Distribuição anual dos poluentes MP10 e O₃ (2015–2021)
@@ -151,6 +152,7 @@ plt.xlabel('Ano')
 plt.legend(title='Poluente')
 plt.grid(True)
 plt.tight_layout()
+plt.savefig('img/grafico_comparativo_anual.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 """##Pandemia x Poluentes
@@ -168,6 +170,7 @@ plt.ylabel('Concentração média (µg/m³)')
 plt.legend(title='Poluente')
 plt.grid(True)
 plt.tight_layout()
+plt.savefig('img/grafico_pandemia_media.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 pivot = media_anuais_todos.pivot(index='Poluente', columns='Ano', values='Valor')
@@ -177,6 +180,7 @@ plt.title('Médias anuais de concentração dos poluentes (2019–2021)')
 plt.ylabel('Poluente')
 plt.xlabel('Ano')
 plt.tight_layout()
+plt.savefig('img/grafico_concentracao.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 """## 🦠 Impacto da Pandemia na Poluição (2019–2021)
