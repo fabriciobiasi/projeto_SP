@@ -54,3 +54,5 @@ Após o download, crie uma pasta chamada `dados/` no mesmo diretório do noteboo
 
 Os dados foram obtidos através do Kaggle.
 
+👨‍💻 Autor
+Feito com 💻 por Fabricio Biasi
